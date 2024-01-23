@@ -1,0 +1,27 @@
+***** Pratice adhoc commands with below **************
+ansible ad hoc ping command example
+ansible ad hoc command to check uptime
+ansible ad hoc command to check memory usage
+ansible ad hoc command to get physical memory allocated to the host
+Execute a command as root user (sudo) on host with ansible ad hoc command
+ansible ad hoc command to Execute a command as a different user  (sudo su)
+ad hoc command to Create a unix user group
+ad hoc command to Create a unix user
+ansible ad hoc command to Create a Directory with 755 permission - ansible mkdir
+ansible ad hoc command to Create a file with 755 permission
+ad hoc command to Change ownership of a file
+ansible ad hoc command to  check free disk space of hosts
+ansible ad hoc command to Install a package using yum command
+ansible ad hoc command to Start or stop the service
+Install and configure python Django application server with ansible ad hoc
+Managing Cron Job and Scheduling with Ansible ad hoc
+Running operations in the background asynchronous with Polling ansible
+ansible ad hoc command to reboot remote system
+ansible ad hoc command to check service status
+ansible ad hoc command to copy file local to remote
+ansible ad hoc command to copy directory local to remote
+ansible ad hoc command to list NFS mounts
+adhoc command to collect memory, cpu and OS distribution of a host
+ansible ad hoc command to stop, start, restart, reload service
+ad hoc command to download file from URL
+ad hoc command to check listening ports
