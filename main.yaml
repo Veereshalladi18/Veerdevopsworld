@@ -1,0 +1,38 @@
+- hosts: all
+  vars:
+    myname: veer
+#storing vars
+  vars_files:
+    - var.yaml
+  tasks:
+    - name: Installing web server
+      package:
+        name: "{{ webPackage }}"
+        state: present
+      register: output
+# registering the output of package module used
+      ignore_errors: true
+#ignor errors is used for skipping the play and excute other plays.
+      
+      
+# debug is used to print the values
+    - debug:
+#        msg: "hello this is for printing package {{ webPackage }}"
+        var: output['failed']
+
+    - name: Installing web server
+      package:
+        name: "httpd"
+        state: present
+      when: output['failed']
+#when is used for condition if fails do it.
+
+    - name: copying web content
+      copy:
+        content: "Let work on daily basis"
+        dest: "{{ webPath }}/index.html"
+
+    - name: Restarting the servers
+      service:
+        name: "{{ webService }}"
+        state: started
