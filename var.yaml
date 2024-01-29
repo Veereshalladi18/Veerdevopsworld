@@ -1,0 +1,3 @@
+webPackage: "httpds"
+webPath: "/var/www/html"
+webService: "httpd"                      
